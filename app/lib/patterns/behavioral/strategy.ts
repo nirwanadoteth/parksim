@@ -1,5 +1,3 @@
-// lib/patterns/behavioral/strategy.ts
-
 export interface IPricingStrategy {
   calculate(hours: number): number;
 }
@@ -12,7 +10,7 @@ export class HourlyStrategy implements IPricingStrategy {
 
 export class WeekendStrategy implements IPricingStrategy {
   calculate(hours: number): number {
-    return hours * 5000; // Lebih mahal
+    return hours * 5000;
   }
 }
 

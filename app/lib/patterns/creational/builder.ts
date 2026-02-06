@@ -1,4 +1,4 @@
-class ParkingTicket {
+export class ParkingTicket {
   constructor(
     public id: string,
     public vehicleNumber: string,
@@ -8,28 +8,28 @@ class ParkingTicket {
   ) {}
 }
 
-export class TickedBuilder {
+export class TicketBuilder {
   private vehicleNumber: string = "";
   private entryTime: Date = new Date();
   private isMember: boolean = false;
   private insuranceIncluded: boolean = false;
 
-  setVehicleNumber(plate: string): TickedBuilder {
+  setVehicleNumber(plate: string): TicketBuilder {
     this.vehicleNumber = plate;
     return this;
   }
 
-  setEntryTime(time: Date): TickedBuilder {
+  setEntryTime(time: Date): TicketBuilder {
     this.entryTime = time;
     return this;
   }
 
-  setIsMember(isMember: boolean): TickedBuilder {
+  setIsMember(isMember: boolean): TicketBuilder {
     this.isMember = isMember;
     return this;
   }
 
-  setInsuranceIncluded(insuranceIncluded: boolean): TickedBuilder {
+  setInsuranceIncluded(insuranceIncluded: boolean): TicketBuilder {
     this.insuranceIncluded = insuranceIncluded;
     return this;
   }

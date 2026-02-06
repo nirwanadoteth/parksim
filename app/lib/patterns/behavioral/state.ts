@@ -1,5 +1,3 @@
-// lib/patterns/behavioral/state.ts
-
 interface SpotState {
   park(context: ParkingSpotContext): string;
   leave(context: ParkingSpotContext): string;
@@ -9,7 +7,7 @@ export class ParkingSpotContext {
   private state: SpotState;
 
   constructor() {
-    this.state = new AvailableState(); // Initial State
+    this.state = new AvailableState();
   }
 
   setState(state: SpotState) {
@@ -30,13 +28,13 @@ class AvailableState implements SpotState {
     ctx.setState(new OccupiedState());
     return "Park successful. State changed to Occupied.";
   }
-  leave(ctx: ParkingSpotContext): string {
+  leave(_ctx: ParkingSpotContext): string {
     return "Spot is already empty.";
   }
 }
 
 class OccupiedState implements SpotState {
-  park(ctx: ParkingSpotContext): string {
+  park(_ctx: ParkingSpotContext): string {
     return "Spot is full!";
   }
   leave(ctx: ParkingSpotContext): string {
