@@ -1,8 +1,8 @@
 # Prototype Pattern
 
-The Prototype pattern specifies the kinds of objects to create using a prototypical instance, and creates new objects by copying this prototype.
+Prototype pattern menentukan jenis objek yang akan dibuat menggunakan instance prototipe, dan membuat objek baru dengan menyalin prototipe ini.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -21,7 +21,7 @@ classDiagram
     IPrototype~ParkingLevel~ <|.. ParkingLevel
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const originalLevel = new ParkingLevel("Level A", 3);

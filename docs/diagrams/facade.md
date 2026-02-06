@@ -1,8 +1,8 @@
 # Facade Pattern
 
-The Facade pattern provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+Facade pattern menyediakan antarmuka terpadu untuk sekumpulan antarmuka dalam sebuah subsistem. Facade mendefinisikan antarmuka tingkat tinggi yang membuat subsistem lebih mudah digunakan.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -48,10 +48,10 @@ classDiagram
     TicketBuilder ..> ParkingTicket : creates
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const facade = new SmartParkingFacade();
 const result = facade.handleVehicleEntry("B 1234 CD");
-// Returns: { ticket: ParkingTicket, processLogs: string[] }
+// Mengembalikan: { ticket: ParkingTicket, processLogs: string[] }
 ```

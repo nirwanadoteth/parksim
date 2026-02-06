@@ -1,8 +1,8 @@
 # Adapter Pattern
 
-The Adapter pattern converts the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+Adapter pattern mengkonversi antarmuka sebuah kelas menjadi antarmuka lain yang diharapkan klien. Adapter memungkinkan kelas-kelas bekerja bersama yang sebelumnya tidak bisa karena antarmuka yang tidak kompatibel.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -24,7 +24,7 @@ classDiagram
     StripeAdapter o-- ExternalStripeLib : stripe
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const paymentProcessor: IPaymentProcessor = new StripeAdapter();

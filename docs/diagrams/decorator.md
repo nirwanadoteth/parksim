@@ -1,8 +1,8 @@
 # Decorator Pattern
 
-The Decorator pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+Decorator pattern menambahkan tanggung jawab tambahan ke objek secara dinamis. Decorator menyediakan alternatif yang fleksibel untuk subclassing dalam memperluas fungsionalitas.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -41,7 +41,7 @@ classDiagram
     ServiceDecorator o-- IParkingService : service
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 let service: IParkingService = new BasicParking();

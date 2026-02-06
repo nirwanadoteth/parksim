@@ -1,43 +1,43 @@
-# ParkSim - Smart Parking System Simulation
+# ParkSim - Simulasi Sistem Parkir Pintar
 
-ParkSim is a smart parking system simulation project built with **Next.js** and **TypeScript**. This project is specifically designed to demonstrate the implementation of various **Design Patterns** in modern software development to create modular, scalable, and maintainable systems.
+ParkSim adalah sebuah proyek simulasi sistem parkir pintar berbasis **Next.js** dan **TypeScript**. Proyek ini dirancang khusus untuk mendemonstrasikan implementasi berbagai **Design Patterns** dalam pengembangan perangkat lunak modern untuk menciptakan sistem yang modular, skalabel, dan mudah dipelihara.
 
-## 🚀 Main Features
+## 🚀 Fitur Utama
 
-- **Hardware Management**: Simulation of gate control and information display panels.
-- **Automatic Ticket System**: Parking ticket creation with flexible configuration.
-- **Real-time Monitoring**: Automatic notifications of parking quota changes to Admin and Display Board.
-- **Payment Flexibility**: Third-party payment integration support (like Stripe) through adapter system.
-- **Pricing Strategy**: Dynamic parking fee calculation (regular vs weekend rates).
-- **Additional Services**: Decorator features for adding services like car wash or valet.
+- **Manajemen Perangkat Keras**: Simulasi kontrol pintu gerbang (Gate) dan panel informasi (Display).
+- **Sistem Tiket Otomatis**: Pembuatan tiket parkir dengan konfigurasi fleksibel.
+- **Pemantauan Real-time**: Notifikasi otomatis perubahan kuota parkir kepada Admin dan Display Board.
+- **Fleksibilitas Pembayaran**: Dukungan integrasi pembayaran pihak ketiga (seperti Stripe) melalui sistem adaptor.
+- **Strategi Tarif**: Perhitungan biaya parkir dinamis (tarif jam biasa vs akhir pekan).
+- **Layanan Tambahan**: Fitur dekorator untuk menambahkan layanan seperti cuci mobil atau valet.
 
-## 🛠️ Implemented Design Patterns
+## 🛠️ Design Patterns yang Diimplementasikan
 
-This project uses 3 main categories of Design Patterns:
+Proyek ini menggunakan 3 kategori utama Design Patterns:
 
-### 1. Creational Patterns
+### 1. Creational Patterns (Pembuatan Objek)
 
-- **Abstract Factory**: Used to differentiate hardware creation between **Standard** and **VIP** types.
-- **Builder**: Used in `TicketBuilder` to create complex ticket objects step by step.
-- **Prototype**: Used to clone parking level configurations (`ParkingLevel`).
+- **Abstract Factory**: Digunakan untuk membedakan pembuatan perangkat keras antara tipe **Standard** dan **VIP**.
+- **Builder**: Digunakan pada `TicketBuilder` untuk membuat objek tiket yang kompleks secara bertahap.
+- **Prototype**: Digunakan untuk mengklon konfigurasi lantai parkir (`ParkingLevel`).
 
-### 2. Structural Patterns
+### 2. Structural Patterns (Struktur Objek)
 
-- **Adapter**: Connects internal system with external payment library (`ExternalStripeLib`).
-- **Decorator**: Adds additional functionality to basic parking services without modifying the original class.
-- **Facade**: Simplifies complex vehicle entry flow into a single simple function through `SmartParkingFacade`.
+- **Adapter**: Menghubungkan sistem internal dengan library pembayaran luar (`ExternalStripeLib`).
+- **Decorator**: Menambahkan fungsionalitas tambahan pada layanan parkir dasar tanpa mengubah kelas aslinya.
+- **Facade**: Menyederhanakan alur masuk kendaraan yang kompleks menjadi satu fungsi sederhana melalui `SmartParkingFacade`.
 
-### 3. Behavioral Patterns
+### 3. Behavioral Patterns (Perilaku Objek)
 
-- **Observer**: Manages parking slot availability status updates to various monitors.
-- **State**: Manages parking slot state transitions from `Available` to `Occupied` and vice versa.
-- **Strategy**: Enables dynamic switching of price calculation algorithms.
+- **Observer**: Mengelola pemutakhiran status ketersediaan slot parkir ke berbagai pemantau.
+- **State**: Mengelola transisi status slot parkir dari `Available` ke `Occupied` dan sebaliknya.
+- **Strategy**: Memungkinkan pergantian algoritma perhitungan harga secara dinamis.
 
-## 📊 Class Diagrams
+## 📊 Diagram Kelas
 
-For detailed class diagrams of each design pattern, see the [Design Pattern Diagrams](./docs/diagrams/README.md) documentation.
+Untuk diagram kelas detail setiap design pattern, lihat dokumentasi [Diagram Design Pattern](./docs/diagrams/README.md).
 
-### Overview Diagram
+### Diagram Overview
 
 ```mermaid
 classDiagram
@@ -78,15 +78,15 @@ classDiagram
     PricingContext --> IPricingStrategy
 ```
 
-## 🚀 Getting Started
+## 🚀 Memulai
 
-### Installation
+### Instalasi
 
 ```bash
 npm install
 ```
 
-### Development
+### Pengembangan
 
 ```bash
 npm run dev
@@ -100,10 +100,10 @@ npm run build
 
 ### API Endpoint
 
-Test all design patterns by accessing:
+Uji semua design pattern dengan mengakses:
 
 ```
 GET /api/parking
 ```
 
-This endpoint demonstrates all 9 design patterns with sample outputs.
+Endpoint ini mendemonstrasikan semua 9 design pattern dengan contoh output.

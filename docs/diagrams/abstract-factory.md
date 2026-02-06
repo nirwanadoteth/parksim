@@ -1,8 +1,8 @@
 # Abstract Factory Pattern
 
-The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+Abstract Factory pattern menyediakan antarmuka untuk membuat keluarga objek yang terkait atau bergantung tanpa menentukan kelas konkretnya.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -63,7 +63,7 @@ classDiagram
     VIPHardwareFactory ..> VIPDisplay : creates
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const standardFactory = new StandardHardwareFactory();

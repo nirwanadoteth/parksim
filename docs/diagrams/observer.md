@@ -1,8 +1,8 @@
 # Observer Pattern
 
-The Observer pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+Observer pattern mendefinisikan ketergantungan satu-ke-banyak antara objek sehingga ketika satu objek berubah status, semua objek yang bergantung padanya akan diberitahu dan diperbarui secara otomatis.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -34,7 +34,7 @@ classDiagram
     ParkingLotSubject o-- IObserver : observers
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const parkingLot = new ParkingLotSubject();
@@ -43,5 +43,5 @@ const admin = new AdminDashboardObserver();
 
 parkingLot.attach(display);
 parkingLot.attach(admin);
-parkingLot.setSpots(5); // Both observers are notified
+parkingLot.setSpots(5); // Kedua observer diberitahu
 ```

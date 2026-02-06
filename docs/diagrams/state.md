@@ -1,8 +1,8 @@
 # State Pattern
 
-The State pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+State pattern memungkinkan objek mengubah perilakunya ketika status internalnya berubah. Objek akan tampak berubah kelasnya.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -36,7 +36,7 @@ classDiagram
     OccupiedState ..> AvailableState : creates
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const spot = new ParkingSpotContext();

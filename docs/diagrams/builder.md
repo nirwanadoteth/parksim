@@ -1,8 +1,8 @@
 # Builder Pattern
 
-The Builder pattern separates the construction of a complex object from its representation so that the same construction process can create different representations.
+Builder pattern memisahkan konstruksi objek kompleks dari representasinya sehingga proses konstruksi yang sama dapat membuat representasi yang berbeda.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -29,7 +29,7 @@ classDiagram
     TicketBuilder ..> ParkingTicket : creates
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const ticket = new TicketBuilder()

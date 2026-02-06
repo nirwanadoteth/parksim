@@ -1,25 +1,25 @@
-# Design Pattern Diagrams
+# Diagram Design Pattern
 
-This folder contains class diagrams for all design patterns implemented in the Park Simulator project.
+Folder ini berisi diagram kelas untuk semua design pattern yang diimplementasikan dalam proyek Park Simulator.
 
-## Behavioral Patterns
-- [Observer Pattern](./observer.md) - Notifies multiple objects about state changes
-- [State Pattern](./state.md) - Allows an object to alter its behavior when its internal state changes
-- [Strategy Pattern](./strategy.md) - Defines a family of interchangeable algorithms
+## Behavioral Patterns (Pola Perilaku)
+- [Observer Pattern](./observer.md) - Memberitahu banyak objek tentang perubahan status
+- [State Pattern](./state.md) - Memungkinkan objek mengubah perilakunya saat status internalnya berubah
+- [Strategy Pattern](./strategy.md) - Mendefinisikan keluarga algoritma yang dapat dipertukarkan
 
-## Creational Patterns
-- [Abstract Factory Pattern](./abstract-factory.md) - Creates families of related objects
-- [Builder Pattern](./builder.md) - Creates complex objects step by step
-- [Prototype Pattern](./prototype.md) - Creates new objects by cloning existing ones
+## Creational Patterns (Pola Pembuatan)
+- [Abstract Factory Pattern](./abstract-factory.md) - Membuat keluarga objek yang terkait
+- [Builder Pattern](./builder.md) - Membuat objek kompleks secara bertahap
+- [Prototype Pattern](./prototype.md) - Membuat objek baru dengan mengkloning objek yang sudah ada
 
-## Structural Patterns
-- [Adapter Pattern](./adapter.md) - Allows incompatible interfaces to work together
-- [Decorator Pattern](./decorator.md) - Adds behavior to objects dynamically
-- [Facade Pattern](./facade.md) - Provides a simplified interface to a complex subsystem
+## Structural Patterns (Pola Struktur)
+- [Adapter Pattern](./adapter.md) - Memungkinkan antarmuka yang tidak kompatibel bekerja bersama
+- [Decorator Pattern](./decorator.md) - Menambahkan perilaku ke objek secara dinamis
+- [Facade Pattern](./facade.md) - Menyediakan antarmuka sederhana untuk subsistem yang kompleks
 
-## Viewing Diagrams
+## Melihat Diagram
 
-The diagrams are written in [Mermaid](https://mermaid.js.org/) format. They can be viewed in:
-- GitHub (renders automatically in markdown files)
-- VS Code with Mermaid extension
+Diagram ditulis dalam format [Mermaid](https://mermaid.js.org/). Dapat dilihat di:
+- GitHub (render otomatis dalam file markdown)
+- VS Code dengan ekstensi Mermaid
 - [Mermaid Live Editor](https://mermaid.live/)

@@ -1,8 +1,8 @@
 # Strategy Pattern
 
-The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+Strategy pattern mendefinisikan keluarga algoritma, mengenkapsulasi masing-masing, dan membuatnya dapat dipertukarkan. Strategy memungkinkan algoritma bervariasi secara independen dari klien yang menggunakannya.
 
-## Class Diagram
+## Diagram Kelas
 
 ```mermaid
 classDiagram
@@ -30,7 +30,7 @@ classDiagram
     PricingContext o-- IPricingStrategy : strategy
 ```
 
-## Usage
+## Penggunaan
 
 ```typescript
 const pricing = new PricingContext(new HourlyStrategy());
