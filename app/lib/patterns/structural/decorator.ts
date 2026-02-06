@@ -1,23 +1,19 @@
-// lib/patterns/structural/decorator.ts
-
 export interface IParkingService {
   getCost(): number;
   getDescription(): string;
 }
 
 export class BasicParking implements IParkingService {
-  getCost = () => 5000; // Base cost
+  getCost = () => 5000;
   getDescription = () => "Basic Parking";
 }
 
-// Base Decorator
 abstract class ServiceDecorator implements IParkingService {
   constructor(protected service: IParkingService) {}
   abstract getCost(): number;
   abstract getDescription(): string;
 }
 
-// Concrete Decorator 1
 export class CarWashDecorator extends ServiceDecorator {
   getCost() {
     return this.service.getCost() + 35000;
@@ -27,7 +23,6 @@ export class CarWashDecorator extends ServiceDecorator {
   }
 }
 
-// Concrete Decorator 2
 export class ValetDecorator extends ServiceDecorator {
   getCost() {
     return this.service.getCost() + 20000;

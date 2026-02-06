@@ -1,5 +1,3 @@
-// lib/patterns/behavioral/observer.ts
-
 interface IObserver {
   update(availableSpots: number): void;
 }
