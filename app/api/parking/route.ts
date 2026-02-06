@@ -11,7 +11,7 @@ import {
 import {
   BasicParking,
   CarWashDecorator,
-} from "@/app/lib/patterns/creational/decorator";
+} from "@/app/lib/patterns/structural/decorator";
 import { SmartParkingFacade } from "@/app/lib/patterns/structural/facade";
 import { NextResponse } from "next/server";
 
