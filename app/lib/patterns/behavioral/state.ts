@@ -28,13 +28,13 @@ class AvailableState implements SpotState {
     ctx.setState(new OccupiedState());
     return "Park successful. State changed to Occupied.";
   }
-  leave(): string {
+  leave(_ctx: ParkingSpotContext): string {
     return "Spot is already empty.";
   }
 }
 
 class OccupiedState implements SpotState {
-  park(): string {
+  park(_ctx: ParkingSpotContext): string {
     return "Spot is full!";
   }
   leave(ctx: ParkingSpotContext): string {
