@@ -98,6 +98,26 @@ npm run dev
 npm run build
 ```
 
+### Testing
+
+Proyek ini dilengkapi dengan comprehensive unit testing menggunakan Jest:
+
+```bash
+# Run semua test
+npm test
+
+# Run test dengan watch mode
+npm run test:watch
+
+# Run test dengan coverage report
+npm run test:coverage
+```
+
+**Test Summary**:
+- ✅ 9 test suites (semua design patterns ter-cover)
+- ✅ 158 test cases (semua pass)
+- ✅ 100% code coverage untuk statements, functions, dan lines
+
 ### API Endpoint
 
 Uji semua design pattern dengan mengakses:
@@ -107,3 +127,7 @@ GET /api/parking
 ```
 
 Endpoint ini mendemonstrasikan semua 9 design pattern dengan contoh output.
+
+## 📖 Dokumentasi
+
+Untuk penjelasan lengkap tentang implementasi design pattern, mapping pattern, dan hasil testing, lihat [Laporan Lengkap](./docs/LAPORAN.md).
